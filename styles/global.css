@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-leckerli-one: "Leckerli One", serif;
+    --font-open-sans: "Open Sans", serif;
+    --font-baloo: "Baloo 2", serif;
+    --text: 400 14px/normal var(--font-open-sans);
+
+    --brand-light: #59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1d6fb697;
+    --danger: #ff5959;
+
+    --input-base: #1c1f21;
+    --input-stroke: #363b40;
+    --input-placeholder: #869198;
+    --shape-background: #131516;
+    --shape-body: #212427;
+    --shape-button: #2d3136;
+    --text-body: #c8cdd0;
+    --text-heading: #f9f9f9;
+}
+
+body {
+    overflow: hidden;
+    font: var(--text);
+    color: var(--text-body);
+}
+
+body::placeholder {
+    font: 400 1rem/1.5 var(--font-open-sans);
+    color: var(--input-placeholder);
+}
+
+legend {
+    font: bold 1.125rem/1 var(--font-baloo);
+    color: var(--text-heading);
+}
+
+h2 {
+    font: bold 1.75rem/1 var(--font-baloo);
+    color: var(--text-heading);
+}

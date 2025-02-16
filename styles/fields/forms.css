@@ -1,0 +1,14 @@
+form {
+    margin-top: 2.5rem;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+}

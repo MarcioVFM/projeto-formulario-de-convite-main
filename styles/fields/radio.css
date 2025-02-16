@@ -1,0 +1,146 @@
+.radio-wrapper {
+    display: flex;
+    margin-top: .75rem;
+    gap: .25rem;
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+    background-color: var(--input-base);
+}
+
+.radio-inner {
+    display: flex;
+    align-items: center;
+    padding-block: .5rem;
+    border: .25rem solid transparent;
+    justify-content: center;
+    gap: .5rem;
+
+    font: 400 0.875rem/1.5 var(--font-open-sans);
+    color: var(--input-placeholder);
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+    }
+
+
+    &:hover,
+    &:focus-within {
+        background-color: var(--input-stroke);
+        border: .25rem solid var(--input-base);
+        border-radius: .5rem;
+    }
+
+    &:has(:checked) {
+        background-color: var(--input-stroke);
+        border: .25rem solid var(--input-base);
+        border-radius: .5rem;
+
+        svg path {
+            fill: var(--brand-light)
+        }
+    }
+
+}
+
+.circle {
+    background-color: var(--shape-background);
+    width: 40px;
+    height: 40px;
+    border: 6px solid var(--shape-button);
+    border-radius: 50%;
+    outline: 0px;
+
+    &:checked {
+        outline: 3px solid var(--brand-light);
+    }
+
+}
+
+.event-theme {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.theme {
+
+    background-color: var(--shape-button);
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+
+
+    & input,
+    & input:focus {
+        all: unset;
+        position: absolute;
+    }
+
+    &:has(:checked) {
+        border: 1px solid var(--brand-light);
+    }
+
+    & img {
+        margin-bottom: .5rem;
+    }
+
+    & label {
+        display: grid;
+        justify-items: center;
+        padding: .25rem;
+        position: relative;
+    }
+}
+
+.blue {
+    background-color: var(--brand-light);
+}
+
+.dark-blue {
+    background-color: #6A59FF;
+}
+
+.purple {
+    background-color: #B259FF;
+}
+
+.fuchia {
+    background-color: #FF59F9;
+}
+
+.pink {
+    background-color: #FF598B;
+}
+
+.red {
+    background-color: var(--danger);
+}
+
+.fuchia {
+    background-color: #FF59F9;
+}
+
+.orange {
+    background-color: #FF8B59;
+}
+
+.yellow {
+    background-color: #FFCD59;
+}
+
+.lime {
+    background-color: #E1FF59;
+}
+
+.green {
+    background-color: #59FF91;
+}
+
+.cyan {
+    background-color: #59FFF9;
+}
